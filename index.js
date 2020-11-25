@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const db = require('quick.db')
 const client = new Discord.Client()
-
+const prefix = "" // ur bot prefix
 client.on('ready', () => {console.log('running on the shit')})
 
  
@@ -26,9 +26,7 @@ const { create } = require('jimp')
    client.on("message", async message => {
           if(message.author.bot) return;
          if(message.channel.type === 'dm') return;
-     let prefix = db.get(`prefix_${message.guild.id}`)
-     if(!prefix) prefix = mainprefix;
-         if(message.content.startsWith(prefix)) {
+          if(message.content.startsWith(prefix)) {
              
     
              const args = message.content.slice(prefix.length).trim().split(/ +/);
