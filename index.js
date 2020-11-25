@@ -47,7 +47,7 @@ const { create } = require('jimp')
  client.on('message', message => {
  if(!message.guild) return;
  if(message.author.bot) return;
-let xp = Math.floor(Math.random() * Math.floor(2500))
+let xp = Math.floor(Math.random() * Math.floor(15))
 let user = db.get(`user_${message.guild.id}_${message.author.id}`)
 if(!user) {
   let data = {
