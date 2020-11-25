@@ -4,7 +4,7 @@ const client = new Discord.Client()
 
 client.on('ready', () => {console.log('running on the shit')})
 
-
+let prefix = "" // ur prefix wew!
 
 
 
