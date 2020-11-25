@@ -2,8 +2,7 @@ const Discord = require("discord.js")
 const code = require('@codedipper/random-code')
  module.exports = {
     name: "settings",
-    description: "set prefix of ur guild",
-    aliases: "setp",
+    description: "settings of level system",
     run: async (client, message, args, db, prefix) => {
 if(!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send(`❌`)
 let command = args[0] 
@@ -74,6 +73,7 @@ if(first.toLowerCase() === 'remove') {
     var filter = database.filter(x => {
       return x != null && x != ''
     })
+  
 db.set(`roles_${message.guild.id}`, filter)  
 message.channel.send(`Succsesfully Removed.`)
   }
