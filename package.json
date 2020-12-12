@@ -2,7 +2,7 @@
   "main": "index.js",
   "author": "darkboy",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "@codedipper/random-code": "^1.0.2",
