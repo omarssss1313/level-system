@@ -97,3 +97,5 @@ let levelup = {
   }
 }
 })
+
+client.login("YOUR_TOKEN")
