@@ -98,4 +98,4 @@ let levelup = {
 }
 })
 
-client.login("YOUR_TOKEN")
+client.login("Nzg5MjcyMjU4NDE2NzM4MzA1.X9vpEg.TrYxVLbNeehwCIdNNZ08uPSczi4")
